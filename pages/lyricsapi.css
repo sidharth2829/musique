@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#content {
+  text-align: center;
+}
+
+h2 {
+  color: #333;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#audioPlayer {
+  margin-top: 20px;
+}
+
+#lyrics {
+  margin-top: 20px;
+  white-space: pre-line; /* Preserve line breaks */
+}
