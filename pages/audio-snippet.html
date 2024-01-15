@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+</head>
+<body>
+
+    <h1>Audio Player</h1>
+
+    <audio controls id="player">
+        <source src="\assets\LoveStory.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+	<br>
+	Guess the song!<br><input type="text"/>
+    <script>
+        const audio = document.getElementById('player');
+        const start = 10;
+        const duration = 10;
+        audio.currentTime = start;
+        audio.play();
+        function audioPause() 
+        {
+            if (audio.currentTime >= startTime + duration) 
+                audio.pause();
+        }
+        audio.addEventListener('timeupdate', audioPause());
+    </script>
+
+</body>
+</html>
