@@ -68,6 +68,13 @@ function checkAnswer(selectedChord, correctChord, optionElement) {
     } else {
         playSound('/assets/sounds/incorrect.mp3'); // Play incorrect sound
         optionElement.style.backgroundColor = 'red';
+         // Display the correct answer in green
+         const correctOption = Array.from(optionsContainer.children).find(option =>
+            option.textContent.trim() === correctChord.trim()
+        );
+        if (correctOption) {
+            correctOption.style.backgroundColor = 'green';
+        }
     }
 }
 
