@@ -8,6 +8,7 @@ const chords = [
 
 const optionsContainer = document.getElementById('optionsContainer');
 let currentChordIndex = 0;
+let points = 0;
 
 document.getElementById('playChordBtn').addEventListener('click', playChord);
 document.getElementById('nextChordBtn').addEventListener('click', nextChord);
@@ -50,8 +51,17 @@ function checkAnswer(selectedChord, correctChord, optionElement) {
     if (selectedChord === correctChord) {
         alert('Correct! Well done.');
         optionElement.style.backgroundColor = 'green';
+        points += 10; // Add points for correct answer
+        displayPoints();
     } else {
         alert('Incorrect. Try again!');
         optionElement.style.backgroundColor = 'red';
+    }
+}
+
+function displayPoints() {
+    const pointsDisplay = document.getElementById('pointsDisplay');
+    if (pointsDisplay) {
+        pointsDisplay.textContent = `Points: ${points}`;
     }
 }
