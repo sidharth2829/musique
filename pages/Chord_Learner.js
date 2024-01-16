@@ -15,9 +15,9 @@ document.getElementById('playChordBtn').addEventListener('click', playChord);
 document.getElementById('nextChordBtn').addEventListener('click', nextChord);
 
 function playChord() {
-    if (hasAnswered) {
-        return; // If user has already answered, do nothing
-    }
+    // if (hasAnswered) {
+    //     return; // If user has already answered, do nothing
+    // }
 
     const currentChord = chords[currentChordIndex];
     const audio = new Audio(currentChord.audio);
