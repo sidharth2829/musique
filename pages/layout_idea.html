@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Boxes</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            height: 100vh;
+        }
+
+        #sidebar {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #content {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            flex: 0 0 calc(33.33% - 20px); /* 33.33% width with 20px margin */
+            margin: 10px;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .box:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <div id="sidebar">
+        <h2>Sidebar</h2>
+        <a href="#section1">Section 1</a><br>
+        <a href="#section2">Section 2</a><br>
+        <a href="#section3">Section 3</a>
+        <!-- Add more links as needed -->
+    </div>
+
+    <!-- Content -->
+    <div id="content">
+        <div class="box" onclick="openNewPage('page1.html')">Box 1</div>
+        <div class="box" onclick="openNewPage('page2.html')">Box 2</div>
+        <div class="box" onclick="openNewPage('page3.html')">Box 3</div>
+        <div class="box" onclick="openNewPage('page4.html')">Box 4</div>
+        <div class="box" onclick="openNewPage('page5.html')">Box 5</div>
+        <div class="box" onclick="openNewPage('page6.html')">Box 6</div>
+        <div class="box" onclick="openNewPage('page7.html')">Box 7</div>
+        <div class="box" onclick="openNewPage('page8.html')">Box 8</div>
+        <div class="box" onclick="openNewPage('page9.html')">Box 9</div>
+        <div class="box" onclick="openNewPage('page10.html')">Box 10</div>
+    </div>
+
+    <script>
+        function openNewPage(page) {
+            window.open(page, '_blank');
+        }
+    </script>
+
+</body>
+</html>
