@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link rel="stylesheet" href="song_player.css" />
+  </head>
+  <body>
+    <div class="music-player">
+      <!-- Add button elements for each song -->
+      <button onclick="playSong('../assets/English/LoveStory.mp3')">
+        Love Story
+      </button>
+      <button onclick="playSong('../assets/English/Vampire.mp3')">
+        Vampire
+      </button>
+      <button onclick="playSong('../assets/Hindi/TumHiHo.mp3')">
+        Tum Hi Ho
+      </button>
+      <button onclick="playSong('../assets/English/AsItWas.mp3')">
+        As It Was
+      </button>
+      <button onclick="playSong('../assets/English/NoTearsLeft.mp3')">
+        No Tears Left
+      </button>
+
+      <audio id="audioPlayer" controls></audio>
+    </div>
+
+    <script src="song_player.js"></script>
+  </body>
+</html>
