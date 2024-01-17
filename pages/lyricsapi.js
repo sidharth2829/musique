@@ -24,7 +24,7 @@ function playAndFetchLyrics(
         console.error("Track not found");
       } else {
         console.log("Lyrics:", data.plainLyrics);
-        document.getElementById("lyrics").innerText = data.plainLyrics;
+        document.getElementById("lyrics").innerHTML = data.plainLyrics;
       }
     })
     .catch((error) => {
