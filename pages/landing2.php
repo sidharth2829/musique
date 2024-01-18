@@ -15,9 +15,10 @@
         </div>
 
         <div class="nav-elements">
-            <a href="" class="nav-element" onclick="document.getElementById('answers').style.display = 'block';">HOME</a>
-            <a href="" class="nav-element">ABOUT US</a>
-            <a href="" class="nav-element">CONTACT US</a>
+            
+            <a href="" class="nav-element">HOME</a>
+            <a  class="nav-element" onclick="document.getElementById('answers1').style.display = 'block';">ABOUT US</a>
+            <a  class="nav-element" onclick="document.getElementById('answers2').style.display = 'block';">CONTACT US</a>
             <a href="" class="nav-element"><?php session_start(); echo" ".$_SESSION["username"]."         "?></a>
             <a href="login.html" class="nav-element">SIGN OUT</a>
         </div>
@@ -50,14 +51,27 @@
     </div>
 
     </div>
-    <div id="answers" onclick="offClick()">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, ut!</div>
+    <div id="answers1" onclick="offClick()"><div id = "box">“Musique is more than just a music streaming service. It’s a language learning platform that lets you discover new songs and cultures from around the world. Whether you want to learn Spanish, French, Hindi, or any other language, Musique has a song for you. And not only that, but you can also learn how to play the chords of your favorite songs on guitar, piano, or ukulele. Musique is the ultimate way to enjoy music and learn languages at the same time. Join Musique today and start your musical journey!”</div> </div>
+    <div id="answers2" onclick="offClick()">
+        <div id="boxy">
+        <br>Hey There!<br>
+        Ask us anything<br>
+        sushwetabm@gmail.com<br><br>
+        hansawani07@gmail.com<br><br>
+        rishu.sach9911@gmail.com<br><br>
+        tanyasinghmadnavat@gmail.com<br><br>
+        asthanap192@gmail.com<br><br>
+        sidharthgrover@gmail.com</div><br>
+    </div>
 
 
 </body>
 <script>
 function offClick()
     {
-        document.getElementById("answers").style.display = "none";
+        document.getElementById("answers1").style.display = "none";
+        document.getElementById("answers2").style.display = "none";
+
     }
 
     </script>
