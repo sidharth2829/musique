@@ -4,6 +4,12 @@ const chords = [
     { name: 'Tum Hi Ho', audio: '/assets/Hindi/TumHiHo.mp3', image: '/assets/artist_images/Arijit Singh.jpeg' },
     { name: 'Tum Se Hi', audio: '/assets/Hindi/TumSeHi.mp3', image: '/assets/artist_images/Mohit Chauhan.jpeg' },
     { name: 'Tum Mile', audio: '/assets/Hindi/TumMile.mp3', image: '/assets/artist_images/Neeraj Shridhar.jpeg' },
+    { name: 'Asit Was', audio: '/assets/English/AsitWas.mp3', image: '/assets/artist_images/Harry Styles.jpg' },
+    { name: 'Feather', audio: '/assets/English/NoTearsLeft.mp3', image: '/assets/artist_images/Selena Gomez.jpeg' },
+    { name: 'Girlfriend', audio: '/assets/English/Girlfriend.mp3', image: '/assets/artist_images/Ruger-EP.webp' },
+    { name: 'Love Story', audio: '/assets/English/LoveStory.mp3', image: '/assets/artist_images/taylor swift.jpeg' },
+    { name: 'Loving You', audio: '/assets/English/ShapeOfYou.mp3', image: '/assets/artist_images/Ed Sheeran.jpeg' },
+
 
 ];
 
@@ -64,7 +70,7 @@ function playChord() {
         canvasContext.fillStyle = 'rgba(255, 255, 255, 0)';
         canvasContext.fillRect(0, 0, canvas.width, canvas.height);
         canvasContext.lineWidth = 2;
-        canvasContext.strokeStyle = 'rgb(0, 0, 0)';
+        canvasContext.strokeStyle = '#FBC630';
         canvasContext.beginPath();
 
         const sliceAngle = (Math.PI * 2) / bufferLength;
