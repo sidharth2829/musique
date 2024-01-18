@@ -25,6 +25,8 @@ function playAndFetchLyrics(
       } else {
         console.log("Lyrics:", data.plainLyrics);
         document.getElementById("lyrics").innerHTML = data.plainLyrics;
+        // You can add a call to fetch translations here if needed
+        // fetchTranslations(trackName, artistName);
       }
     })
     .catch((error) => {
@@ -34,3 +36,8 @@ function playAndFetchLyrics(
   // Play the audio
   audioElement.play();
 }
+
+// Example function to fetch translations
+// function fetchTranslations(trackName, artistName) {
+//   // Implement translation fetching logic here
+// }
