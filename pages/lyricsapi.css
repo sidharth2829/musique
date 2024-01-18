@@ -29,7 +29,14 @@ button:hover {
   margin-top: 20px;
 }
 
-#lyrics {
+#lyricsContainer {
+  display: flex;
+  justify-content: space-between;
   margin-top: 20px;
+}
+
+#lyrics,
+#translation {
+  flex-basis: 45%;
   white-space: pre-line; /* Preserve line breaks */
 }

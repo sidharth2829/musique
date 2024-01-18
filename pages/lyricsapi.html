@@ -2,46 +2,33 @@
 <html>
   <head>
     <title>Lyrics Fetcher</title>
+    <link rel="stylesheet" type="text/css" href="lyricsapi.css" />
   </head>
   <body>
-   
-    <div id="lyrics">
-        <h2>Song List</h2>
-        <ul id="songList">
-          <!-- List of songs -->
-          <li onclick="fetchLyrics('I Want to Live', 'Borislav Slavov', 'Baldur\'s Gate 3 (Original Game Soundtrack)', 233)">I Want to Live</li>
-          <!-- Add more songs with similar structure -->
-        </ul>
+    <div id="content">
+      <h2>Song List</h2>
+      <button
+        onclick="playAndFetchLyrics('Love Story', 'Taylor Swift', 'Fearless', 236, '../assets/English/LoveStory.mp3')"
+      >
+        Love Story
+      </button>
 
+      <div id="audioPlayer">
+        <audio controls id="audioElement">
+          <!-- Audio source will be set dynamically -->
+        </audio>
+      </div>
+
+      <div id="lyricsContainer">
+        <div id="lyrics">
+          <!-- Lyrics will be displayed here -->
+        </div>
+        <div id="translation">
+          <!-- Translation will be displayed here -->
+        </div>
+      </div>
     </div>
 
-    <script>
-      // Function to call the LRCGET API
-      function fetchLyrics(trackName, artistName, albumName, duration) {
-        // Construct the API call URL with query parameters
-        var callUrl = `https://lrclib.net/api/get?track_name=${encodeURIComponent(
-          trackName
-        )}&artist_name=${encodeURIComponent(
-          artistName
-        )}&album_name=${encodeURIComponent(albumName)}&duration=${duration}`;
-
-        // Make the API call
-        fetch(callUrl)
-          .then((response) => response.json())
-          .then((data) => {
-            if (data.code && data.code === 404) {
-              console.error("Track not found");
-            } else {
-              console.log("Lyrics:", data.plainLyrics); // Handle the response data
-              document.getElementById('lyrics').innerHTML=data.plainLyrics;
-            }
-          })
-          .catch((error) => {
-            console.error("Error:", error); // Handle any errors
-          });
-      }
-
- 
-    </script>
+    <script src="lyricsapi.js"></script>
   </body>
 </html>
