@@ -18,6 +18,8 @@
             <a href="" class="nav-element" onclick="">HOME</a>
             <a href="" class="nav-element">ABOUT US</a>
             <a href="" class="nav-element">CONTACT US</a>
+            <a href="" class="nav-element"><?php session_start(); echo" ".$_SESSION["username"]."         "?></a>
+            <a href="login.html" class="nav-element">SIGN OUT</a>
         </div>
 
     </div>
