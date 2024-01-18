@@ -99,3 +99,11 @@ button {
     background-color: #ddd;
 }
 
+#chord_Image {
+    filter: blur(5px); /* Initial blur effect */
+    transition: filter 0.5s ease; /* Smooth transition for blur effect */
+}
+
+#chord_Image.blurred-image {
+    filter: blur(0); /* Remove blur effect */
+}
