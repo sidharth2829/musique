@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #3498db;
     display: flex;
     height: 100vh;
 }
@@ -43,18 +43,18 @@ body {
 }
 
 .box {
-    flex: 0 0 calc(17% ); /* 33.33% width with 20px margin */
+    flex: 0 0 calc(20% ); /* 33.33% width with 20px margin */
     margin-left: 6rem;
     margin-right:4rem;
     background-color: #3498db;
-    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     border-radius: 5px;
     transition: background-color 0.3s;
-    height:120px;
+    height:25vh;
+    width:30vw;
     position: relative;
     margin-bottom: 5mm; /* Add margin to the bottom of the outer div */
 }
@@ -66,7 +66,8 @@ body {
     left: 0;
     width: 100%;
     background-color: #3498db;
-    color: white;
+    color: black;
+    font-size:1.5rem;
     text-align: center;
     padding: 5px;
     box-sizing: border-box;
