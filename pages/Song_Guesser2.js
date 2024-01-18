@@ -64,7 +64,7 @@ function playChord() {
         canvasContext.fillStyle = 'rgba(255, 255, 255, 0)';
         canvasContext.fillRect(0, 0, canvas.width, canvas.height);
         canvasContext.lineWidth = 2;
-        canvasContext.strokeStyle = 'rgb(0, 0, 0)';
+        canvasContext.strokeStyle = '#FBC630';
         canvasContext.beginPath();
 
         const sliceAngle = (Math.PI * 2) / bufferLength;
