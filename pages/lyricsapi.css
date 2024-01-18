@@ -1,10 +1,13 @@
 body {
   font-family: Arial, sans-serif;
-  margin: 20px;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 
 #content {
   text-align: center;
+  padding: 20px;
 }
 
 h2 {
@@ -12,7 +15,7 @@ h2 {
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #1db954;
   color: white;
   padding: 10px 20px;
   font-size: 16px;
@@ -22,11 +25,21 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #1ed760;
 }
 
 #audioPlayer {
-  margin-top: 20px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #212121;
+  padding: 10px;
+  text-align: center;
+}
+
+audio {
+  width: 100%;
 }
 
 #lyricsContainer {
@@ -38,5 +51,6 @@ button:hover {
 #lyrics,
 #translation {
   flex-basis: 45%;
-  white-space: pre-line; /* Preserve line breaks */
+  white-space: pre-line;
+  color: #000000; /* Set text color to white */
 }
