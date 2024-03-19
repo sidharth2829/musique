@@ -195,6 +195,7 @@ Show drafts
 
 
 
+!["Beautiful Flower"](URL example image ON placeholder.com)
 
 
 
