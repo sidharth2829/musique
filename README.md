@@ -273,4 +273,16 @@ int main() {
 Use code with caution.
 These are just a few examples. The specific code will vary depending on how you want to handle user input, data types, and error handling.
 
+def sum(numbers):
+  """This function takes a list of numbers and returns their sum."""
+  total = 0
+  for num in numbers:
+    total += num
+  return total
+
+# Example usage
+numbers = [1, 2, 3, 4, 5]
+result = sum(numbers)
+print(f"The sum of the numbers is: {result}")
+
 
